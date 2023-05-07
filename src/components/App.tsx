@@ -1,7 +1,7 @@
+import { Advice } from "./advice/Advice";
+
 function App() {
-  return (
-  <h1>Hello World</h1>
-  );
+  return <Advice />;
 }
 
 export default App;
