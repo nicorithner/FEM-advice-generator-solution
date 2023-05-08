@@ -1,0 +1,83 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/functions";
+@import "../../sassStyles/mixins";
+
+.advice-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 332px;
+  width: 540px;
+  padding: 48px;
+  padding-bottom: 0;
+  border-radius: 15px;
+  background: $darkGrayishBlue;
+  box-shadow: 30px 50px 80px 0px $blackTransparency;
+
+  @include mobileBreakPoint {
+    padding-inline: 24px;
+    width: auto;
+  }
+}
+
+.advice-title {
+  color: $neonGreen;
+  font-family: Manrope;
+  font-size: toRem(13);
+  font-weight: 800;
+  line-height: toRem(18);
+  letter-spacing: toRem(4.085713863372803);
+  text-align: center;
+
+  @include mobileBreakPoint {
+    font-size: toRem(11);
+  }
+}
+
+.advice-quote {
+  font-family: Manrope;
+  font-size: toRem(28);
+  font-weight: 800;
+  line-height: toRem(38);
+  letter-spacing: toRem(-0.3);
+  text-align: center;
+  color: $lightCyan;
+
+  @include mobileBreakPoint {
+    font-size: toRem(24);
+  }
+}
+
+
+#pattern-divider-desktop {
+  display: block;
+  @include mobileBreakPoint {
+    display: none;
+  }
+}
+
+#pattern-divider-mobile {
+  display: none;
+  @include mobileBreakPoint {
+    display: block;
+  }
+}
+
+.advice-die-button {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $neonGreen;
+  margin-bottom: -32px;
+  cursor: pointer;
+
+
+  &:hover {
+    box-shadow: 0px 0px 40px 0px $neonGreen;
+  }
+}
