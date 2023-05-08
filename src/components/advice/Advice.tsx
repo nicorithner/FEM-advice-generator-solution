@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./Advice.scss";
+
 import DieIcon from "../../assets/images/icon-dice.svg";
 import DividerDesktop from "../../assets/images/pattern-divider-desktop.svg";
 import DividerMobile from "../../assets/images/pattern-divider-mobile.svg";
@@ -17,9 +19,9 @@ export const Advice = () => {
 
   return (
     <div className="advice-wrapper">
-      <p>ADVICE #{adviceNumber}</p>
-      <p>"{advice}"</p>
-      <div className="quote-ornament-wrapper">
+      <h1 className="advice-title">ADVICE #{adviceNumber}</h1>
+      <p className="advice-quote">"{advice}"</p>
+      <div className="advice-quote-ornament-wrapper">
         <img
           src={DividerDesktop}
           alt="Ornament indicating text above is a quote"
@@ -32,7 +34,7 @@ export const Advice = () => {
         />
       </div>
 
-      <button className="dice-button" type="submit">
+      <button className="advice-die-button" type="submit">
         <img src={DieIcon} alt="Black die" />
       </button>
     </div>
