@@ -23,6 +23,9 @@
 
 .loader-wrapper {
   justify-content: center;
+  @include mobileBreakPoint {
+    min-width: 345px;
+  }
 }
 
 .advice-title {
