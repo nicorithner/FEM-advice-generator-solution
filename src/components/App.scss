@@ -1,6 +1,12 @@
+@import "../sassStyles/mixins";
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  @include mobileBreakPoint {
+    padding-inline: 16px;
+  }
 }
