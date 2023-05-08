@@ -21,6 +21,13 @@
   }
 }
 
+.loader-wrapper {
+  justify-content: center;
+  @include mobileBreakPoint {
+    min-width: 345px;
+  }
+}
+
 .advice-title {
   color: $neonGreen;
   font-family: Manrope;
