@@ -52,7 +52,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [github page](https://nicorithner.github.io/solution-skilled-elearning-landing-page/)
+- Live Site URL: [github page](https://nicorithner.github.io/FEM-advice-generator-solution/)
 
 ## My process
 
